@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ellipse</h1>
+    <hr>
+    <svg height="500" width="500" style="border:  1px solid">
+        <ellipse cx="250" cy="150" rx="150" ry="90" fill="blue" stroke="purple" stroke-width="7" />
+        <ellipse cx="250" cy="150" rx="50" ry="90" fill="green" stroke="red" stroke-width="7" />
+    </svg>
+
+    <hr style="border: 1px solid;">
+    <h1>logo</h1>
+    <hr>
+    <svg height="500" width="500" style="border:  1px solid">
+        <ellipse cx="250" cy="150" rx="150" ry="90" fill="rgb(14, 211, 221)" stroke="black" stroke-width="7" />
+        <text fill="green" font-size="60" x="195" y="170" font-family="verdana">LJU</text>
+    </svg>
+
+    <hr style="border: 1px solid;">
+    <h1>polygon</h1>
+    <hr>
+    <svg height="500" width="500" style="border:  1px solid">
+        <polygon points=50,30,350,150,280,250,90,320" stroke="black" stroke-width="5" fill="white" />
+    </svg>
+    <hr style="border: 1px solid;">
+    <h1>polygon 1</h1>
+    <hr>
+    <svg height="500" width="500" style="border:  1px solid">
+        <polygon points="250,50,50,400,250,250,450,400" stroke="black" stroke-width="5" fill="blue" />
+    </svg>
+    <hr style="border: 1px solid;">
+    <h1>STAR</h1><!--aapde points ma x1,y1 upto xn,yn sudhi javanu-->
+    <!-- fill rule
+     default=nonzero
+     odd=inside(fill)
+     even=outside(don't fill)-->
+    <hr>
+    <svg height="500" width="500" style="border:  1px solid">
+        <polygon points="50,450,250,50,450,450,50,180,450,180" stroke="black" stroke-width="5" fill="skyblue"
+            fill-rule="evenodd" />
+    </svg>
+    <hr style="border: 1px solid;">
+    <h1>polygon 2</h1>
+    <hr>
+    <svg height="500" width="500" style="border:  1px solid">
+        <circle cx="250" cy="270" r="190" fill="skyblue" stroke="black" stroke-width="1" />
+        <polygon points="50,450,250,50,450,450,50,180,450,180" stroke="black" stroke-width="1" fill="white"
+            fill-rule="evenodd" />
+        <text fill="green" font-size="60" x="200" y="255 " font-family="verdana">LJU</text>
+    </svg>
+    <hr style="border: 1px solid;">
+    
+</body>
+
+</html>

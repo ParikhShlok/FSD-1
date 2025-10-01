@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--get method thi url ma batase post ma avu nai thai-->
+    <!--enctype post method ma thase-->
+    <form action="tabletask.html" method="get">
+        <!--<fieldset>
+            <legend align="center">information</legend>
+            <label for="uname">username</label>
+            <input type="text" id="uname" name="un" autofocus autocomplete="on" required placeholder="username"
+                maxlength="15" minlength="5" /><br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="eid" placeholder="abc@gmail.com" required value="abc@gmail.com">
+            <br>
+            <label for="password">password</label>
+            <input type="password" id="password" minlength="8" placeholder="Abc@123" maxlength="16">
+            <br>
+            <label for="content">contact no.:</label>
+            <input type="tel" placeholder="9998883939" required />
+            <br>
+            <label>gender</label><br>
+            <input type="radio" name="gender" value="male" checked />male<br>
+            <input type="radio" name="gender" value="female">female <br>
+            <label>Hobbies:</label><br>
+            <input type="checkbox" name="hobby" value="music" checked>music <br>
+            <input type="checkbox" name="hobby" value="drawing">drawing
+        </fieldset>
+        <fieldset>
+            <legend align="center">submit</legend>
+            <input type="submit" value="submit">
+        </fieldset>
+        <fieldset>
+            <legend align="center">readonly,disabled,hidden</legend>
+            <input type="text" value="readonly" readonly name="ro"><br>
+            <input type="text" name="promo" value="LJU50" disabled><br>
+            <input type="hidden" name="uid" value="1234">
+        </fieldset>-->
+        <fieldset>
+            <legend align="center">Additional information</legend>
+            <label>DOB</label>
+            <input type="date" name="dob" min="2025-09-07" max="2025-12-31">
+            <br>
+            <label for="age">age</label>
+            <input type="number" name="age" min="1" max="30" step="1" value="14">
+            <br>
+            <label for="color">select color</label>
+            <input type="color" name="cl" value="#000000">
+            <br>
+            <label for="msg">message</label>
+            <textarea name="msg" rows="1" cols="20" placeholder="enter your messagehere"></textarea>
+            <br>
+            <label for="branch">select branch</label>
+            <select name="branch">
+                <option value="select" selected hidden> branch</option>
+                <optgroup label="computer"><!--category mate chhe -->
+                    <option value="cse">CSE</option>
+                    <option value="ce">CE</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="ec">ec</option>
+                    <option value="me">me</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="pb">Preferred Browser</label>
+            <input list="Browser" name="Browser">
+            <datalist id="Browser">
+                <option value="chrome"></option>
+                <option value="safari"></option>
+                <option value="edge"></option>
+            </datalist>
+            <br>
+            <label for="price">price</label>
+            <input type="range" name="price" id="price" min="100" max="1000" step="50" value="200" name="price">
+            <br>
+            <input type="reset" value="reset values"/>
+            <br>
+            <input type="button" value="click here"><!--script run karavvi hoi tyaare-->
+            <br>
+            <input type="submit" value="submit">
+            <br>
+            <button type="submit">submit</button><!--script run karavvi hoi tyaare-->
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
+
