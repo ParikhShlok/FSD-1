@@ -18,7 +18,7 @@ rule 2: identifier should not start with digit.
 rule 3: identifier are case sensitive.
     
 
-rule 4: we can;t use reseverd words as identifier.
+rule 4: we can't use reseverd words as identifier.
    
 
  rule 5: there is no length for python identifier.
