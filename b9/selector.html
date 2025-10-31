@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        #p1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .p2 {
+            font-size: 30px;
+            text-align: right;
+        }
+
+        h4.p2 {
+            color: purple;
+            font-size: 60px;
+        }
+
+        p.text-red {
+            color: red;
+        }
+
+        * {
+            text-align: center;
+            color: blue;
+        }
+        .d1 p {
+            color: red;
+            text-align: right;
+            font-size: 22px;
+        }
+        
+        div.d1>p {
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--class and id selector ma id ni priority high hase-->
+    <!--priority of selector
+    inline css
+    id #
+    class .
+    element-->
+    <p id="p1" class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam esse molestiae ipsam
+        asperiores tempora doloremque, eius sequi iste laboriosam? Aspernatur praesentium a molestiae, aliquam mollitia
+        culpa cumque quos sapiente?</p>
+    <p class="p2 text-red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ipsum mollitia autem. Esse
+        ducimus neque sed in, perferendis vel, labore sequi non officia, ratione molestiae. Reiciendis odit soluta
+        consectetur quaerat.</p>
+    <h3 class="text-red"> Heading 3</h3>
+    <h4 class="p2">Heading 4</h4>
+
+    <!-- other slectors -->
+    <div class="d1">
+        <p>para in d1</p>
+        <div class="d2">
+            <p>para inside d2</p>
+        </div>
+        <p>para inside d1</p>
+    </div>
+    <p>outside paragraph</p>
+</body>
+
+</html>

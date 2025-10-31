@@ -1,0 +1,28 @@
+button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+button:hover{
+    background-color: brown;
+    padding: 20px;
+}
+button:active{
+    background-color: yellow;
+    color: black;
+}
+.i1:focus{
+    background-color: lightblue;
+}
+.c1:checked+label{
+    color: blue;
+    font-weight: bolder;
+}
+ul li:nth-child(2){
+    color:red;
+    font-weight: 800;
+}
+ul li:not(.special){
+    font-style: italic;
+    color:aqua;
+}

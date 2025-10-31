@@ -1,0 +1,26 @@
+h1{
+    color: #21cb68;
+    text-align: center;
+    text-shadow: 4px 2px 1px rgba(124, 81, 142, 0.905);/*horizontal vertical */
+    text-decoration: underline overline line-through;
+    text-transform: capitalize;
+}
+p{
+    text-indent: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+h2{
+    font-family: "Lobster Two", sans-serif;
+}

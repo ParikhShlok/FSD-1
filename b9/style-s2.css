@@ -1,0 +1,17 @@
+input[type=email]{
+    padding: 10px;
+    background-color: beige;
+    width: 100px;
+}
+input[type=button]{
+    background-color: aqua;
+    color: blue;
+    padding: 5px;
+}
+a[target=_blank]{
+    color: chartreuse;
+
+}
+a{
+    color: violet;
+}
