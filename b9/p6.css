@@ -1,0 +1,85 @@
+.container{
+    display: flex;/*alag alag property muki ne joi levu*/
+    background-color: burlywood;
+    padding: 10px;
+    gap: 15px;
+    /*flex-direction: row-reverse;/*default=row**/
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    flex-wrap: wrap-reverse;
+}
+.box:nth-child(2){
+    order: 1;/*positvive value=last ma aavse,negetive=pela aavse*/
+    flex: 1 1 100px;/*flex: grow shrink basis*/
+    background-color: orange;
+}
+.box{
+    background-color: lightpink;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid blue;
+    width: 150px;
+}
+/*posititionig css*/
+.container1{
+    margin: 50px 0;
+    height: 800px;
+    border: 1px solid red;
+    position: relative;
+
+}
+.container2{
+    height: 1000px;
+    border: 2px solid red;
+}
+.test{
+    margin:0 10px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid;
+}
+#test1{
+    background-color: navy;
+    top: 50px;
+    right:150px;
+}
+#test2{
+    background-color: aqua;
+    position: relative;/*ani jagya a thi move thase*/
+    top: 50px;
+    left: 300px;
+}
+#test3{
+    background-color: burlywood;
+    position: absolute;/*parent div ne dhyaan ma lai ne change thase*/
+    top: 100px;
+    right:0;
+}
+#test4{
+    background-color: beige;
+    position: fixed;/*aakha body part ma batadse*/
+    bottom: 150px;
+    right:0px;
+}
+#test5{
+    background-color: yellow;
+    position: sticky;/*khali container ma j rese*/
+    top: 200px;
+}
+/*property z-index*/
+#test6{
+    position: relative;
+    top: 150px;
+    background-color: yellow;
+    left: 50px;
+    z-index: 6;/*z-index ma jeni value vadhare te upar aavse */
+}
+#test7{
+    position: relative;
+    background-color: pink;
+    z-index: 5;
+}

@@ -1,0 +1,20 @@
+.container{
+    position: relative;
+}
+img{
+    width: 100%;
+    opacity: 0.4;
+    height: auto;
+}
+.b1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 50px;
+}
+.b2{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 50px;
+}

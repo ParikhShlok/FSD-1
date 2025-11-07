@@ -1,0 +1,8 @@
+.news{
+    column-count: 4;
+    column-gap: 20px;
+    column-rule-width: 8px;
+    column-rule-color: red;
+    text-align: justify;
+    column-rule-style: double;
+}

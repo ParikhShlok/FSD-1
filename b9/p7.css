@@ -1,0 +1,14 @@
+.g1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);/*screen according part padse*/
+    grid-template-rows: 1fr 2fr;/*rows ready karse*/
+    gap: 10px;
+    background-color: lightblue;
+    padding: 10px;
+}
+.box{
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}

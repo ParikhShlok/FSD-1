@@ -1,28 +1,83 @@
-button{
-    background-color: black;
-    color: white;
-    padding: 10px;
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
-button:hover{
-    background-color: brown;
-    padding: 20px;
+
+button:hover {
+  background-color: brown;
+  padding: 20px;
 }
-button:active{
-    background-color: yellow;
-    color: black;
+
+button:active {
+  background-color: yellow;
+  color: black;
 }
-.i1:focus{
-    background-color: lightblue;
+
+.i1:focus {
+  background-color: lightblue;
 }
-.c1:checked+label{
-    color: blue;
-    font-weight: bolder;
+
+.c1:checked + label {
+  color: blue;
+  font-weight: bolder;
 }
-ul li:nth-child(2){
-    color:red;
-    font-weight: 800;
+/*aa pseuodo class ni property chhe*/
+ul li:nth-child(2) {
+  color: red;
+  font-weight: 800;
 }
-ul li:not(.special){
-    font-style: italic;
-    color:aqua;
+
+ul li:not(.special) {
+  font-style: italic;
+  color: aqua;
+}
+.p1::first-line {
+  color: cadetblue;
+  font-size: 25px;
+  font-weight: 900;
+}
+.p1::first-letter {
+  color: aqua;
+  font-size: 60px;
+  text-decoration: underline;
+}
+.p1::before {
+  content: "NOte That: ";
+  color: blue;
+}
+.p1::after {
+  /*content: url("1.jfif");*/
+  content: "😀😀😀";
+}
+.p1::selection {
+  background-color: cornflowerblue;
+  color: blueviolet;
+}
+/*aa pseudo element ni properrty chhe*/
+.d1 ul li::marker {
+  color: purple;
+  font-size: 20px;
+  content: "🙄 ";
+}
+/*display property*/
+.d2 div {
+  display: inline-block; /*aama khali inline pan aave*/
+  background-color: lightblue;
+  border: 3px solid blue;
+  padding: 7px;
+  text-align: center;
+  margin: 5px;
+  height: 150px;
+  width: 150px;
+}
+.d2 div:nth-child(2) {
+  display: none;
+}
+.d3 span {
+  display: block;
+  background-color: yellow;
+  color: blue;
+  padding: 10px;
+  margin: 5px;
 }
