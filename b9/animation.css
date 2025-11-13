@@ -12,6 +12,7 @@
     animation-iteration-count: infinite;
     animation-direction: 5;
 }
+
 /*FROM=0% TO=100%*/
 @keyframes example{
     0%{
@@ -31,5 +32,47 @@
     }
     100%{
         background-color: red;
+    }
+}
+.d2{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    margin: 20px;
+    position: absolute;
+    animation-name: e1;
+    animation-duration: 15s;
+    animation-delay: 1;/*-ve value ma e time delay complete thai jai pachi nu dekhai*/
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes e1{
+    0%{
+        background-color: blue;
+        top: 0;
+        left: 0;
+
+    }
+    25%{
+        background-color: green;
+        top: 50%;
+        left: 10%;
+    }
+    50%{
+        background-color: rgb(234, 234, 13);
+        top: 0%;
+        left: 20%;
+    }
+    75%{
+        background-color: rgb(253, 6, 130);
+        top:50%;
+        left: 30% ;
+    }
+    100%{
+        background-color: red;
+        top: 0;
+        left: 40%;
     }
 }

@@ -1,0 +1,60 @@
+<html>  
+<head>  
+    <style>  
+.container{ 
+    margin-top: 50px; 
+    height: 800px; 
+    border: 1px solid red; 
+    position: relative; 
+} 
+.container1{ 
+    margin-top: 30px; 
+    height: 1000px; 
+    border: 2px solid black; 
+} 
+
+.test { 
+    margin-left: 20px; 
+    height: 100px; 
+    width : 100px; 
+    text-align: center; 
+    font-size:30px; 
+} 
+#test1{ 
+    background-color: aqua; 
+      position: relative;  
+      left: 70px;
+      z-index: 5;
+} 
+#test2{ 
+    background-color: rgb(76, 0, 255); 
+    position: relative;  
+    left: 70;
+    bottom: 30;
+    z-index: 2;
+    
+} 
+#test3{ 
+    background-color: rgb(255, 0, 140); 
+    position: sticky; 
+    top: 00px; 
+   
+} 
+.container .test>.test{
+    font-size: 60px;
+}
+
+    </style> 
+</head>  
+<body>  
+    <div class="container"> 
+        <div class="test" id="test1">1</div> 
+        <div class="test" id="test2">2 <div class="test">gfgfg</div></div>
+ 
+        <div class="test" id="test3">3</div> 
+        <div class="test" id="test4">4</div> 
+       
+    </div> 
+    <div class="container1"></div> 
+</body>  
+</html>

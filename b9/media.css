@@ -1,0 +1,36 @@
+/* body{
+    background-color: aqua;
+}
+h1{
+    font-size: 60px;
+    color: red;
+}
+@media screen and (min-width:400px) and (max-width:800px) {
+    body{
+        background-color: pink;
+    }
+    h1{font-size: 40px;
+    color: blue;}
+}
+@media (max-width:400px){
+    body{
+        background-color: yellow;
+    }
+    h1{
+        font-size: 20px;
+        color: green;
+    }
+} */
+body{
+    background-color: pink;
+}
+h1{
+    color: blue;
+}
+@media not (orientation: landscape){
+    body{border-color: blue;}
+    h1{color: white;}
+}
+@media (orientation: portrait){
+    
+}

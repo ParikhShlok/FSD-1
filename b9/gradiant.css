@@ -1,0 +1,43 @@
+.d1{
+    margin: 50px auto;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    background-image: linear-gradient(rgb(0, 9, 128),rgb(192, 247, 255));
+    box-shadow: 10px 10px 20px black;
+}
+.d2{
+    margin: 50px auto;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    background-image: linear-gradient(to top,green 15%,rgb(0, 162, 255)30%,yellow 39%,pink 80%);
+    box-shadow: 10px 10px 20px black;
+}
+.d3{
+    width: 70%;
+    height: 100%;
+    font-size: 70px;
+    text-align: center;
+    background-image: linear-gradient(to right,pink,green,blue,orange,red,purple,yellow,black);
+    box-shadow: 10px 10px 20px black;
+    /*font ne color karva*/
+    color: transparent;
+    background-clip: text;
+}
+.d4{
+    background: radial-gradient(circle ,yellow,green,red);
+    margin: 20px auto;
+    width: 300px;
+    height: 250px;
+}
+.c1{
+    height: 300px;
+    width: 300px;
+    background: conic-gradient(red,green,blue);
+}
+.c2{
+    height: 300px;
+    width: 300px;
+    background: conic-gradient(red 45deg,yellow 90deg,green 180deg,blue 270deg, purple 310deg);
+}
