@@ -1,4 +1,0 @@
-roll no 016
-welcome to python
-welcome to all
-hello everyone
