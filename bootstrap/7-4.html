@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container p-2 bg-secondary">
+        <form action="#">
+            <!-- vertical form -->
+            <div class="mb-3">
+                <label class="form-label">username</label>
+                <input type="text" class="form-control" />
+            </div>
+            <!-- horizontal form -->
+            <div class="row">
+                <label for="" class="col-sm-2 col-form-label">email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" placeholder="email">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- floating label --input pela aavse after its label --placeholder complusary -->
+    <div class="container my-4 bg-info p-2">
+        <form action="#">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" placeholder="fn">
+                        <label>First name</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" placeholder="">
+                        <label>last name</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <label>Automated user id</label>
+                    <input type="text" readonly value="IN-0001" class="form-control-plaintext">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container bg-success p-3">
+        <form action="#">
+            <div class="row">
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select">
+                            <option value="">--select--</option>
+                            <option value="ahm">Ahmedabad</option>
+                            <option value="Rajkot">Rajkot</option>
+                        </select>
+                        <label>city</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-warning">
+                <div class="col-sm-4">
+                    <label class="form-label text-info fs-1">Hobbies</label>
+                    <div class="form-check">
+                        <input type="checkbox" name="h" value="drawing" class="form-check-input">
+                        <label class="form-check-label">drawing</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="h" value="travellig" class="form-check-input">
+                        <label class="form-check-label">travellig</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="h" value="Coding" class="form-check-input">
+                        <label class="form-check-label">Coding</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="h" value="sleeping" checked class="form-check-input">
+                        <label class="form-check-label">sleeping</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-check form-switch">
+                        <input type="radio" class="form-check-input" checked>
+                        <label class="form-check-label">subscribe to newsletter</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <label for="" class="form-label">gender</label>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender">
+                        <label class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender">
+                        <label class="form-check-label">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-floating">
+                        <textarea placeholder="comments" style="height: 100px;" class="form-control"></textarea>
+                        <label class="comments">comments</label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="" class="form-label fs-1 text-info">feedback</label>
+                    <div class="d-flex justify-content-between mb-1 text-warning">
+                        <span>Poor</span><span>average</span>
+                        <span>good</span><span>verygood</span><span>excellent</span>
+                    </div>
+                    <input type="range" min="1" max="5" step="1" class="form-range">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group">
+                        <span class="input-group-text">Rs</span>
+                        <input type="text" class="form-contol" placeholder="Amount">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">First Name & Last Name</span>
+                    <input type="text" class="form-control" placeholder="fn">
+                    <input type="text" class="form-control" placeholder="ln">
+                </div>
+                <input type="button" class="btn btn-dark">
+            </div>
+        </form>
+    </div>
+    <div class="container p-5 border-5 border-dark">
+    <form class="was-validated" >
+        <div class="my-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Email" required>
+            <div class="valid-feedback">
+            email looks good!</div>
+            <div class="invalid-feedback">please enter valid email</div>
+        </div>   
+        <input type="submit" class="btn btn-primary">
+
+    </form>
+</div>
+</body>
+
+</html>

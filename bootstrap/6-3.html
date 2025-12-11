@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!--button and spinners-->
+    <button type="button" class="btn btn-link">click</button>
+    <input type="button" class="btn-success btn btn-sm" value="submit">
+    <a href="#" class="btn btn-outline-primary btn-lg">link</a>
+    <button type="button" class="btn btn-primary" disabled>Primary
+        button</button>
+    <button class="btn w-100 btn-primary my-3">hello</button>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+    <button type="button" class="btn btn-danger active my-4">click</button>
+    <div class="spinner-border"></div>
+    <div class="spinner-border text-primary"></div>
+    <div class="spinner-border spinner-grow text-warning"></div>
+<span class="spinner-border text-success"></span>
+    <span class="spinnerborder text-danger"></span>
+    <div class="spinner-border spinner-border-sm text-danger"></div>
+    <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>loading...
+    </button>
+    <button class="btn btn-success" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true">loading...</span>
+    </button>
+
+    <!--alert-->
+    <div class="alert alert-info">
+        A simple info alert—check it out!
+    </div>
+    <div class="alert alert-danger">Important message
+        <button class="btn" data-bs-dismiss="alert">
+            cancel
+        </button>
+    </div>
+    <div class="alert alert-warning alert-dismissible">Important message
+        <button class="btn-close" data-bs-dismiss="alert">
+        </button>
+    </div>
+    <!--dropdown-->
+    <div class="dropdown my-3">
+        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+            Subject
+        </button>
+        <ul class="dropdown-menu btn btn-outline-info">
+            <li><a class="dropdown-item" href="#">DE</a></li>
+            <li><a class="dropdown-item" href="#">FSD</a></li>
+            <li><a class="dropdown-item" href="#">Python</a></li>
+        </ul>
+    </div>
+    <div class="dropdown my-4">
+        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+            Subject
+        </button>
+        <div class="dropdown-menu">
+            <strong class="dropdown-header">SEM 3</strong>
+            <a href="" class="dropdown-item active">Python</a>
+            <a href="" class="dropdown-item disabled">DE</a>
+            <a href="" class="dropdown-item">FSD</a>
+            <div class="dropdown-divider"></div> <strong class="dropdown-header">SEM 4</strong>
+            <a href="" class="dropdown-item">FSD-2</a>
+        </div>
+    </div>
+    <!--Collapse-->
+    <a href="#linkcollapse" class="btn btn-dark m-3" data-bs-toggle="collapse">link</a>
+    <div class="collapse" id="linkcollapse">
+        <div class="card card-body text-warning bg-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Beatae quasi distinctio aut minus modi, minima, natus itaque tempora consequuntur, totam in quam aliquam
+            magni laudantium sint iste fuga voluptates iusto.</div>
+    </div>
+
+    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#buttoncollapse">Button</button>
+    <div class="collapse" id="buttoncollapse">
+        <div class="card card-body text-info bg-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Beatae quasi distinctio aut minus modi, minima, natus itaque tempora consequuntur, totam in quam aliquam
+            magni laudantium sint iste fuga voluptates iusto.</div>
+    </div>
+    <!--card-->
+    <div class="card w-25">
+        <div class="card-header text-danger">Sale</div>
+        <img src="1.jfif" alt="" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit </p>
+            <a href="#" class="btn btn-danger">details</a>
+        </div>
+    </div>
+
+</body>
+</html>
