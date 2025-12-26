@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--data type-->
+    <script>
+        //primitive data type
+        var a="abc";
+        var b=20;
+        var c=true;
+        var d;
+        var e=null;
+        console.log(typeof(a),typeof(b),typeof(c),typeof(d),typeof(e));
+        var x=16+4+"3";
+        var z="3"+4+5;
+        document.writeln(x);//203
+        document.write(z);//345
+        //non primitive data type
+        const p=["apple","grapes","pineapple"]
+        var l=p.length;
+        console.log(l);
+        console.log(p[0],p[l-1]);
+        const s={name:"abc",city:"ahm"};
+        document.writeln(s.name);
+        document.writeln(s["city"]);
+        var d=[{name:"abc",age:20},{name:"pqr",age:30,city:"ahm"}];
+        document.writeln(d[0]["name"],d[1]["city"]);
+        console.log(d[0]["name"],d[1]["city"]);
+        document.write(JSON.stringify(d));
+        // if else condition
+        let m=12;
+        if(m>20){
+            console.log("very good");
+        }
+        else if(m>=9){
+            console.log("good");
+        }
+        else{
+            console.log("oops you're fail");
+        }
+        // switch case
+        let role="admin"
+        switch(role){
+            case "admin":
+                console.log("admin access");
+                break;
+            case "reader":
+                console.log("reader access");
+                break;
+            case "editor":
+                console.log("editor access");
+                break;
+            default:
+                console.log("na malyu");
+        }
+        // ternary operator
+        // condition?true:false
+        let age=15;
+        var res=age>=18?"adult":"minor";
+        console.log(res);
+        // loos
+        for(let i=1;i<=5;i++){
+            console.log(i);
+        }
+        let r=1;
+        while(p<=5){
+            console.log(r);
+            p++;
+        }
+        // let t=5;
+        // do{
+        //     console.log(t);
+        //     t++
+        // }while(t<=5);
+        var f=["apple","banana","kivy"]
+        for (let i of f){
+            console.log(i);
+        }
+        var user={name:"pqr",age:30,city:"ahm"};
+        for (u in user){
+            console.log(u,"=",user[u]);
+        }
+        var f=["apple","banana","kivy"]
+        for (let i in f){
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
