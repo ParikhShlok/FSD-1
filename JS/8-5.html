@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let msg = "hello";
+        let msg1 = `hello template literals`;
+        let a = "abc";
+        let out = "hello " + a + "!";
+        let out1 = `hello ${a}!`;
+        console.log(msg, msg1);
+        console.log(`normal: ${out} template literals: ${out1}`);
+
+        var m = "hello \n world";
+        var n = "hello B9 students";
+        var o =
+`template
+literals
+topic`;
+        var s = `hello
+        identation
+        space`;
+        console.log(m, n);
+        console.log(o);
+        console.log(s);
+
+        //alert
+        function a1(){
+            alert("hello friends");
+        }
+        //confirm
+        function b(){
+            var res=confirm("do you want to join")
+            if (res==true){
+                alert("yes");
+            }
+            else{
+                alert("no");
+                return false;
+            }
+        }
+        //prompt
+        function c(){
+            var res=prompt("enter name","name");
+            alert(`welcome ${res}!`);
+        }
+        
+    </script>
+<button onclick="a1()">alert</button>
+<input type="button" value="confirm" onclick="b()">
+<button onclick="c()">prompt</button>
+</body>
+
+</html>

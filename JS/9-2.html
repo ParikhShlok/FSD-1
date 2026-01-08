@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="p1">Paragraph 1</p>
+    <p class="p1" id="pid">paragraph 2</p>
+    <p class="p1">Paragraph 3</p>
+    <img src="1.jfif" id="i1" alt="">
+    <h2>query selector</h2>
+    <h2 class="head2"> query selector example</h2>
+    <h2 class="head2">query selector example 1</h2>
+    <img src="1.jfif" alt=""><br>
+    <button onclick="my()">Apply</button>
+    <script>
+        function my(){
+            var d=document.getElementsByClassName('p1');
+            d[1].innerHTML='<b><i>how are you?</i></b>';
+            for (var d1 of d){
+                d1.style.fontsize='35px';
+                d1.style.color='red';
+            }
+            document.getElementById('pid').innerHTML="<b>hi</b>";
+            document.querySelector('img').setAttribute('src','2.jfif');
+            var a=document.querySelectorAll('.head2');
+            for (var a1 of a){
+                a1.innerHTML='<i>test</i>';
+                a1.style.textDecoration='underline';
+            }
+            var i=document.querySelectorAll('img');
+            for (var j=0;j<=i.length;j++){
+                i[j].setAttribute('src','2.png');
+            }
+        }
+    </script>
+</body>
+</html>

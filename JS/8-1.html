@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+</head>
+<body>
+    <script>
+        document.write("<h1> hello </h1>")
+        document.writeln("hi")
+        document.writeln("hi")
+        console.log("first example")/* browser console error ne developer side management mate che*/
+        /*local or global varriables*/
+        var d=200;//global varriable
+        var d=150;
+        console.log(d)
+        function my(){
+            var a=100;//local varriable
+            document.writeln(a);
+            document.writeln(d);
+        }
+        document.writeln(d);
+        my();
+        //console.log(a); Uncaught ReferenceError: a is not defined
+        console.log(e);
+        var e=15;
+        /*local or global varriables*/
+        let s=10;
+        function my1(){
+            let b=20;
+            console.log(s,b);
+        }
+        my1()
+        console.log("s:"+s);
+        //console.log(b);
+        //console.log(c); Uncaught ReferenceError: Cannot access 'c' before initialization
+        // let c=15;
+        // let s1=18;
+        // let s1=20;
+        // console.log(s1); Uncaught SyntaxError: Identifier 'd' has already been declared
+        // let s1=18;
+        // s1=20;
+        // console.log(s1);
+        /*local or global varriables*/
+        const j=80;
+        function my2(){
+            const g=39;
+            console.log(j,g);
+        }
+        // my2();
+        // function my3(){
+        //     j=39; //Uncaught TypeError: Assignment to constant variable
+        //     console.log(j);
+        // }
+        // my3();
+        // console.log(j);
+        // console.log(g); //Uncaught ReferenceError: Cannot access 'c' before initialization
+        const z1=11;
+        z1=3;
+        console.log(z1);
+    </script>
+    <script src="8-1.js"></script>
+</body>
+</html>

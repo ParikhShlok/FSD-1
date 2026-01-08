@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onkeydown="kd(event)">
+    <form onsubmit="form1(event)">
+        <input onchange="oc(event)">
+        <select onchange="show(event)">
+            <option value="royalblue">royalblue</option>
+            <option value="teal">teal</option>
+            <option value="coral">coral</option>
+        </select>
+        <input type="submit">
+    </form>
+    <div style="border: 3px solid; width: 200px; height: 300px;" onmousedown="md(event)">
+        click
+    </div>
+    <script>
+        function form1(e){
+            e.preventDefault();
+            alert(`thank you. Event type is ${e.type}`);
+        }
+        function oc(x){
+            var v=x.target.value;
+            alert(`value is ${v} and type is ${e.type}`);
+        }
+        function show(x){
+            alert(`color is ${x.target.value}`);
+        }
+        function kd(e){
+            alert(`key is ${e.key} and code is ${e.keyCode}`);
+        }
+        function md(e){
+            var b=e.button;
+            if(b==0){
+                alert("left");
+            }
+            else if(b==1){
+                alert("middle");
+            }
+            else if(b==2){
+                alert("right");
+            }
+            else{
+                alert("invalid");
+            }
+        }
+    </script>
+</body>
+</html>

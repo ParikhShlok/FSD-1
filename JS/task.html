@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        //task 
+        alert("welcome")
+        var s=confirm("do you want to join")
+        if (s===true){
+            var s1=prompt("enter 1")
+            var s2=prompt("enter 2")
+            alert(`addition is ${parseInt(s1)+parseInt(s2)}`)
+        }
+        else{
+            alert("rehno do")
+        }
+    </script> -->
+    <form>
+        <input type="text" id="i1">
+        <input type="password" id="p1"><br>
+        <input type="button" onclick="fun()" value="submit">
+    </form>
+    <p id="msg"></p>
+    <script>
+        function fun(e){
+            // e.preventDefault();
+            var u=document.getElementById("i1").value;
+            var p=document.getElementById("p1").value;
+            var m=document.getElementById("msg").value;
+            var pat1=/^[@_0-9]/
+            var pat2=/^[A-Za-z0-9@!_-]{6,12}$/; //aane biji rite /^.{6,12}/
+            m.style.color='red';
+            if (u.length===0 || p.length===0){
+                m.innerHTML="both fir=elds are mandatory";
+            }
+            else if(pat1.test(u)){
+                m.innerHTML="username must not start with @,_ or numbers.";
+            }
+            else if(!pat2.test(p)){
+                m.innerHTML='password must be 6 to 12';
+            }
+            else{
+                m.innerHTML=`welcome ${u}`
+                m.style.color='green';
+            }
+            
+        }
+    </script>
+</body>
+</html>
