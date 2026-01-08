@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="i1" placeholder="product">
+        <input type="text" id="i2" placeholder="price">
+        <input type="text" id="i3" placeholder="discount">
+        <input type="button" value="save" onclick="savedata()">
+        <button onclick="showdata()">show</button>
+        <button onclick="removedata()">remove</button>
+        <button onclick="cleardata()">clear</button>
+    </form>
+<script>
+    function savedata(){
+        localStorage.setItem("product",document.getElementById('i1').value);
+        localStorage.setItem("price",document.getElementById('i2').value);
+        localStorage.setItem("discount",document.getElementById('i3').value);
+        alert("data stored");
+    }
+    function showdata(){
+        var v1=localStorage.getItem("product");
+        var v2=localStorage.getItem("price");
+        var v3=localStorage.getItem("discount");
+        alert (`price of product ${v1} is ${v2}. 
+        discount applied ${v3}`);
+    }
+    function removedisc(){
+        localStorage.removeItem('discount');
+    }
+    function cleardata(){
+        localStorage.clear();
+    }
+</script>
+</body>
+
+</html>
