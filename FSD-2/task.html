@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user={
+            'name':['abc','def','ghi'],
+            'age':28,
+            'course':["fsd-1","de",'fsd-2'],
+            'address':['t1','t2',{'t3':'given again'}]
+        };
+        console.log(user.address[2].t3);
+        console.log(user.name[1]);
+        console.log(user.course[2]);
+        console.log(user.address[1]);
+        console.log(user.age+" "+user.name[1]+" "+user.course[1]);
+        document.write(user.age+" "+user.name[1]+" "+user.course[1]);
+    </script>
+</body>
+</html>

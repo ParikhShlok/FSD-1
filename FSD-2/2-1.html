@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- style="color: teal; background-color: coral; text-align: center; font-size: 100px;" -->
+    <p id="id"></p>
+    <script>
+        // setTimeout(myfun,5000);
+        // function myfun(){
+        //     document.getElementById('id').innerHTML="LJU";
+        // }
+        //---------------------every 2 sec addition
+        // let a=2,b=5;
+        // setInterval(fun,2000);
+        // function fun(){
+        //     document.getElementById('id').innerHTML=++a + ++b;
+        // }
+        //---------------------size incremental
+        size=16;
+        function add(){
+            id.innerHTML="hello";
+            id.style.color="red";
+            id.style.fontSize=size + "px";
+            if (size<=50){size++};    
+        }
+        setInterval(add,1000);
+        
+    </script>
+</body>
+</html>

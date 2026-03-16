@@ -1,0 +1,2 @@
+Initial content written to the file.
+Appended content added.

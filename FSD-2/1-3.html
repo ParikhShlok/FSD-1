@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+    stringify:-object to string in json
+    parse:- string to json object
+    -->
+    <button onclick="faaaa()"
+        style="border: 8px black solid; background-color: red; color:yellow; border-radius: 50%; height: 100px; width:100px;">click me</button><br>
+
+    <script>
+        let obj = JSON.parse('{"var1":"LJ","var2":"University"}')
+        console.log(obj)
+        console.log(obj.var1 + ' ' + obj.var2)
+        //stringify
+        let obj1 = JSON.stringify({ "var1": "LJ", "var2": "University" })
+        console.log(obj1)
+        console.log(obj1.var1 + ' ' + obj1.var2)//undefined
+        //update the key value
+        let person = { name: 'samir', age: 19, city: 'ahm' }
+        console.log(person)
+        //dot notation
+        person.age = 30;
+        console.log(person)
+        //using bracket
+        person['city'] = 'surat'
+        console.log(person)
+        //variable key
+        let key = 'name'
+        person[key] = 'bhupendra jogi'
+        //date
+        const obj3 = { "name": "xyz", 'age': 22, 'dob': "1997-03-14" }
+        console.log(obj3)
+        a = new Date(obj3.dob)
+        console.log(a)
+
+        function faaaa() {
+            const d = { "name": "xyz", 'age': 22, 'dob': "1997-03-14" }
+            a = new Date(d.dob)
+            document.writeln(a)
+        }
+        //browse default value style change
+        const sub={'fsd':[{"topic":"html","course":"beginner","content":["tags","table","form"]},
+                    {"topic":"css","course":"advanced","content":['tags',"table","form"]}]}
+        //using for loop
+        for (x in sub.fsd){
+            for (y in sub.fsd[x]){
+                document.writeln(sub.fsd[x][y]+"<br>")
+            }
+        }
+        //using fo of
+        document.write("---------------"+"<br>")
+        for (x1 of sub.fsd){
+            document.write(x1.topic+"<br>")
+            document.write(x1.course+"<br>")
+            document.write(x1.content+"<br>")
+        }
+        //descending order
+        document.write("---------------"+"<br>")
+        const student=[
+            {name:"abc",age:19},
+            {name:'def',age:25},
+            {name:'xyz',age:39}
+        ]
+        const s=student.sort((a,b)=>b.age-a.age)[0]
+        console.log(s)
+        
+    </script>
+</body>
+</html>
