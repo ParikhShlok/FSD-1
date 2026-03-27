@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id" style="color: red;background-color: cyan;border: black 2px solid; width: 100%; text-align: center;height: 100px; font-size:xx-large ;"></p>
+    <script>
+        let a=2,b=5;
+        setInterval(myfun,1000);
+        function myfun(){
+            document.getElementById("id").innerHTML=++a + ++b
+        }
+
+        let size=15;
+        function add(){
+            id.innerHTML="HELLO";
+            id.style.color="red";
+            id.style.fontSize=size;
+            if(size<=50){
+                size++;
+            }
+            setInterval(add,1000);
+        }
+    </script>
+</body>
+</html>

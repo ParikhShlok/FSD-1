@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id" style="color: red;background-color: cyan;border: black 2px solid; width: 100%; text-align: center;height: 100px; font-size:xx-large ;"></p>
+    <p id="id1" style="color: red;background-color: cyan;border: black 2px solid; width: 100%; text-align: center;height: 100px; font-size:xx-large ;"></p>
+    <script>
+        size=200;
+        function add(){
+            id.innerHTML="hello";
+            id.style.color="red";
+            id.style.fontSize=size+'px';
+            if(size<=500){
+                size--;
+            }
+        }
+        setInterval(add,200);
+
+        size1=15;
+        function add1(){
+            id1.innerHTML="hello";
+            id1.style.color="red";
+            id1.style.fontSize=size1+'px';
+            if(size1<=200){
+                size1++;
+            }
+        }
+        setInterval(add1,200);
+    </script>
+</body>
+</html>
